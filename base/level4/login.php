@@ -10,11 +10,12 @@ if ($zhenshiyonghu===$user){
         echo "login success!";
     }
     else{
-        echo "    login error!!!";
+        echo "login error!!!"; //前面多了空格导致长度不一致
     }
 
 }
 else{
     echo 'oh! username error';
 }
+
 ?>
