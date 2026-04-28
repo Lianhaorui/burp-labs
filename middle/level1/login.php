@@ -8,7 +8,7 @@ $pass = isset($_POST['password']) ? (string)$_POST['password'] : '';
 
 $success = ($zhenshiyonghu === $user && $pass === $zhenshimima);
 http_response_code(302);
-header('Location: ' . ($success ? '/middle/level1/welcome.php' : '/middle/level1/login.html'));
+header('Location: ' . ($success ? 'welcome.php' : 'login.html'));
 $target = 2048;
 echo str_repeat('x', $target);
 exit;
